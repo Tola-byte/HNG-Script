@@ -3,6 +3,7 @@
 
 $json = $_SERVER["QUERY_STRING"] ?? '';
 
+echo exec('java test');
 $files = scandir("scripts/");
 
 unset($files[0]);
