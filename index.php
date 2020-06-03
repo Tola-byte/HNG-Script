@@ -24,6 +24,9 @@ foreach($files as $file){
         case 'py':
             $startScript = "python";
             break;
+        case 'java':
+            $startScript = "java";
+            break;
     }
 
     $f = exec($startScript . " scripts/".$file);
